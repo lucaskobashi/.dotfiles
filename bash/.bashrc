@@ -27,12 +27,6 @@ export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PURPLE}\
 
 #=== alias ===#
 
-# run aliases
-if [ -f ~/.bash_aliases ]
-then
-    source ~/.bash_aliases
-fi
-
 # edit .bashrc
 alias brc="vim ~/.bashrc;source ~/.bashrc"
 
@@ -50,6 +44,12 @@ alias ..="cd .."
 alias grep='grep --color=auto'
 alias fregp='fgrep --color=auto'
 alias efrep='egrep --color=auto'
+
+# run remainder aliases
+if [ -f ~/.bash_aliases ]
+then
+    source ~/.bash_aliases
+fi
 
 # Color for manpages in less makes manpages a little easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'
