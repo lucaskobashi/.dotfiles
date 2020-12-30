@@ -23,13 +23,14 @@ HISTFILESIZE=2000
 
 #=== ps1 ===#
 
-export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET}: "
+export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PURPLE}\W${RESET}]$ "
 
 #=== alias ===#
 
 # run aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.bash_aliases ]
+then
+    source ~/.bash_aliases
 fi
 
 # edit .bashrc

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # checks if directory was cloned successfully
 if [ ! -d ~/.dotfiles/ ]
 then
