@@ -27,14 +27,15 @@ export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET}: "
 
 #=== alias ===#
 
+# run aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
 # edit .bashrc
 alias brc="vim ~/.bashrc;source ~/.bashrc"
 
-# edit .vimrc
-alias vrc="vim ~/.vimrc"
-
-# r settings
-alias rprof="vim ~/.Rprofile"
+# open R terminal
 alias R="cd /Library/Frameworks/R.framework/Resources/bin;./R --quiet --no-save;cd ~"
 
 # remove .DS_Store files
@@ -43,11 +44,6 @@ alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 # system
 alias ls='gls -aFh --color=always --group-directories-first'
 alias ..="cd .."
-
-# usask cmpt shortcuts
-alias cmpt215="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 215/Assignments "
-alias cmpt280="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 280/Assignments "
-alias cmpt370="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 370/Assignments "
 
 # colours
 alias grep='grep --color=auto'
@@ -65,6 +61,3 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
-
-# Tell grep to highlight matches
-export GREP_OPTIONS='—color=auto'
