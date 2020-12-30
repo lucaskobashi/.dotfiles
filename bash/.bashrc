@@ -16,6 +16,11 @@ RESET="\[\e[0m\]"
 
 shopt -s autocd
 
+# append to history file
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
 #=== ps1 ===#
 
 export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET}: "
@@ -43,6 +48,11 @@ alias ..="cd .."
 alias cmpt215="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 215/Assignments "
 alias cmpt280="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 280/Assignments "
 alias cmpt370="cd ~/OneDrive/-\ U\ of\ S/CMPT/CMPT\ 370/Assignments "
+
+# colours
+alias grep='grep --color=auto'
+alias fregp='fgrep --color=auto'
+alias efrep='egrep --color=auto'
 
 # Color for manpages in less makes manpages a little easier to read
 export LESS_TERMCAP_mb=$'\E[01;31m'
