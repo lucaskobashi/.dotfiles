@@ -37,13 +37,13 @@ alias R="cd /Library/Frameworks/R.framework/Resources/bin;./R --quiet --no-save;
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # system
-alias ls='gls -aFh --color=always --group-directories-first'
+alias ls="gls -aFh --color=always --group-directories-first"
 alias ..="cd .."
 
 # colours
-alias grep='grep --color=auto'
-alias fregp='fgrep --color=auto'
-alias efrep='egrep --color=auto'
+alias grep="grep --color=auto"
+alias fregp="fgrep --color=auto"
+alias efrep="egrep --color=auto"
 
 # run remainder aliases
 if [ -f ~/.bash_aliases ]
