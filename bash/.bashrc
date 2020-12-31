@@ -11,6 +11,8 @@ MAGENTA="\[\e[0;35m\]"
 CYAN="\[\e[0;36m\]"
 WHITE="\[\e[0;37m\]"
 RESET="\[\e[0m\]"
+PLUM="\[\e[38;5;97m\]"
+SKYBLUE3="\[\e[38;5;74m\]"
 
 #=== shopts ===#
 
@@ -23,7 +25,7 @@ HISTFILESIZE=2000
 
 #=== ps1 ===#
 
-export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PURPLE}\W${RESET}]$ "
+export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PLUM}\W${RESET}]$ "
 
 #=== alias ===#
 
