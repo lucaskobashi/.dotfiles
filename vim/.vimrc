@@ -73,6 +73,7 @@ colorscheme onedark
 " #== nerdtree ==#
 
 nmap <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeShowHidden=1
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
