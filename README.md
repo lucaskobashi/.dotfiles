@@ -49,7 +49,7 @@ git clone https://github.com/lucaskobashi/.dotfiles.git
 ##### Automatic :rocket:
 
 - If you're reading a .dotfiles page on github you probably know what you're doing
-- Please refere to [manual](#####Manual) section.
+- Please refere to [manual](#manual-airplane) section.
 - But if you're lazy, you can do the following:
 
 > ps: i am not responsible for anything you do on your side. make sure you understand what is going on before even trying.
