@@ -2,7 +2,7 @@
 
 #### Welcome to my dotfiles page (:
 
-After spending way too much time on the internet looking for ways to make my terminal look nice, I finally compiled what I have found to be the best _~ & prettiest ~_ of 'em all.
+After spending way too much time on the internet looking for ways to make my terminal look nice, I finally compiled what I have found to be the best *~ & prettiest ~* of 'em all.
 
 ### Content:
 - .bashrc
