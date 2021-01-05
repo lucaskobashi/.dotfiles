@@ -25,7 +25,7 @@ HISTFILESIZE=2000
 
 #=== ps1 ===#
 
-export PS1="${CYAN}lucas${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PLUM}\W${RESET}]$ "
+export PS1="${CYAN}${USER}${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PLUM}\W${RESET}]$ "
 
 #=== alias ===#
 

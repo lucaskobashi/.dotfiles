@@ -65,17 +65,6 @@ cd ~/.dotfiles
 stow -vt ~
 ```
 
-### Modify PS1 to remove "lucas"
-
-- Open file:
-```bash
-vim ~/.bashrc;source ~/.bashrc
-```
-- Change information of the PS1 variable:
-```bash
-export PS1="${CYAN}name${RESET}${WHITE}@${RESET}${YELLOW}\h${RESET} [${PLUM}\W${RESET}]$ "
-```
-
 ### Acknowledgements
 
 - My T.A. **Evan Semenoff** for getting me started with all of this
