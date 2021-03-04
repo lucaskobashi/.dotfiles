@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script downloads and places vim-mips syntax in the correct foler
+# Can be modified to include other syntax files
+
 # checks if directory already exists
 if [ -d ~/.dotfiles/vim-mipssyntax ]
 then
@@ -8,7 +11,7 @@ then
 fi
 
 # creates directory for syntax
-mkdir -p ~/.dotfiles/vimSyntax/.vim/syntax
+mkdir -p ~/.dotfiles/vim/.vim/syntax
 
 # changes directory to dotfiles folder
 cd ~/.dotfiles
@@ -18,21 +21,10 @@ echo "cloning vim-mipssyntax from github"
 git clone git@github.com:harenome/vim-mipssyntax.git
 
 # moves the syntax options
-mv ./vim-mipssyntax/syntax/* ./vimSyntax/.vim/syntax
+mv ./vim-mipssyntax/syntax/* ./vim/.vim/syntax
 
 # removes leftovers
 rm -rf ./vim-mipssyntax
 
 echo "create symlink? (yes or no)"
 read CHOICE
-
-# stow the files
-
-if [ $CHOICE = "y" -o $CHOICE = "yes" ]
-then
-    echo "creating symlink."
-    stow --adopt -vt ~ vimSyntax
-    echo "symlink created"
-else
-    echo "symlink not created."
-fi

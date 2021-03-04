@@ -17,7 +17,7 @@ set noshowmode
 set showtabline=2
 set nobackup
 set nowritebackup
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 filetype plugin indent on
 syntax on

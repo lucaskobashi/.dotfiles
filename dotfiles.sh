@@ -21,7 +21,7 @@ read CHOICE
 if [ $CHOICE = "y" -o $CHOICE = "yes" ]
 then
     echo "creating symlink."
-    stow -vt ~ git bash htop R tmux vim vimSyntax
+    stow -vRt ~ R bash git htop tmux vim
     echo "symlink created"
 else
     echo "symlink not created."

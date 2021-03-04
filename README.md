@@ -23,6 +23,7 @@ ubuntu
 ```bash
 sudo apt-get install stow
 ```
+make sure there are no dotfiles in your home folder. stow won't overwrite
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
 - Follow the tutorial on the link above if you havent't already
