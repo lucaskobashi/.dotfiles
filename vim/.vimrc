@@ -1,23 +1,28 @@
+""""""""""""""
+"   .vimrc   "
+"            "
+""""""""""""""
+
 " #== set ==#
 
-set background=dark
-set nocompatible
-set t_Co=256
-set number
-set tabstop=4
-set shiftwidth=4
-set smartindent
-set autoindent
-set cursorline
-set noswapfile
-set incsearch
-set colorcolumn=80
-set ruler
-set noshowmode
-set showtabline=2
-set nobackup
-set nowritebackup
-" set clipboard=unnamedplus
+" basics
+set number          " display number of lines
+set showtabline=2   " allows upper tab with file names
+
+" colours
+set t_Co=256        " enables 256 colours
+set colorcolumn=80  " adds column at 80th character
+set cursorline      " highlights current line
+
+" tabs
+set tabstop=4       " tab indent size
+set shiftwidth=4    " level of indentation
+set autoindent      " uses indent from previous line
+set smartindent     " reacts to code syntax style
+
+" misc
+set incsearch       " incremental search using /
+set noshowmode      " hides -- INSERT -- from status line
 
 filetype plugin indent on
 syntax on
@@ -40,6 +45,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
+Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
@@ -66,15 +72,20 @@ if (has("autocmd") && !has("gui_running"))
   augroup END
 endif
 
+" changes default colours of terminal
 let g:onedark_color_overrides = {
 \ "red": {"gui": "#cc241d", "cterm": "167", "cterm16": "1" },
 \ "yellow": {"gui": "#ffd75f", "cterm": "221", "cterm16": "3" },
 \ "blue": {"gui": "#5fafd7", "cterm": "74", "cterm16": "4" },
 \ "purple": {"gui": "#875f87", "cterm": "96", "cterm16": "5" },
-\ "green": {"gui": "#875f87", "cterm": "149", "cterm16": "5" },
+\ "green": {"gui": "#875f87", "cterm": "149", "cterm16": "2" },
 \}
 
 colorscheme onedark
+highlight cursorline ctermbg=233
+
+" scala javadoc indent
+let g:scala_scaladoc_indent = 1
 
 " #== nerdtree ==#
 
@@ -87,5 +98,4 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 " auto syntax for mips
 autocmd BufNewFile,BufRead *.s set syntax=mips
-autocmd BufNewFile,BufRead *.asm set syntax=mips
-
+autocmd BufNewFile,BufRead *.asm set syntaxSkyBlue
