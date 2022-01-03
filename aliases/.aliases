@@ -1,0 +1,22 @@
+# colours
+alias grep="grep --color=auto"
+alias fregp="fgrep --color=auto"
+alias efrep="egrep --color=auto"
+
+# python
+alias python="python3"
+alias pip="pip3"
+
+# edit .bashrc
+alias brc="vim ~/.bashrc;source ~/.bashrc"
+
+# edit .zshrc
+alias zrc="vim ~/.zshrc;source ~/.zshrc"
+
+# remove .DS_Store files
+alias cleanupds="sudo find . -type f -name '*.DS_Store' -ls -delete"
+
+# system
+# alias only works for mac with gnu tools installed
+alias ls="gls -aFh --color=always --group-directories-first"
+alias ..="cd .."

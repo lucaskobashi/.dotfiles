@@ -29,25 +29,15 @@ export PS1="${CYAN}${USER}${RESET}${WHITE}@${RESET}${LYELLOW}\h${RESET} [${PLUM}
 
 #=== alias ===#
 
-# edit .bashrc
-alias brc="vim ~/.bashrc;source ~/.bashrc"
-
-# remove .DS_Store files
-alias cleanupds="sudo find . -type f -name '*.DS_Store' -ls -delete"
-
-# system
-# alias only works for mac with gnu tools installed
-alias ls="gls -aFh --color=always --group-directories-first"
-alias ..="cd .."
-
 LS_COLORS=$LS_COLORS:'di=0;95:' ; export LS_COLORS
 
-# colours
-alias grep="grep --color=auto"
-alias fregp="fgrep --color=auto"
-alias efrep="egrep --color=auto"
-
 # run remainder aliases
+
+if [ -f ~/.aliases ]
+then
+    source ~/.aliases
+fi
+
 if [ -f ~/.bash_aliases ]
 then
     source ~/.bash_aliases
