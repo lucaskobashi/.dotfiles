@@ -80,7 +80,7 @@ stow -vt ~
 ### Acknowledgements
 
 - My T.A. **Evan Semenoff** for getting me started with all of this
-- My friend **[Braden Dubois](bradendubois.dev)** for all the help and inspiration
+- My friend **[Braden Dubois](https://bradendubois.dev)** for all the help and inspiration
 - [itchyny/lightline](https://github.com/itchyny/lightline.vim)
 - [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 - [joshdick/onedark](https://github.com/joshdick/onedark.vim)
