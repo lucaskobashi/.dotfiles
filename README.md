@@ -3,32 +3,43 @@
 #### Welcome to my dotfiles page (:
 
 After spending way too much time on the internet looking for ways to make my terminal look nice, I finally compiled what I have found to be the best *~ & prettiest ~* of 'em all.
+The bulk of the files are made to be compatible with macOS.
 
 ### Content:
+- .aliases
 - .bashrc
-- .vimrc
-- .tmux.conf
 - .gitconfig
-- htop
+- .gitignore
 - .Rprofile
+- .tmux.conf
+- .vimrc
+- .zshrc
 
 ### Pre-conditions:
 
+#### [homebrew](https://brew.sh/)
+
+> macOS Package Manager\
+Follow the tutorial on the link above if you haven't already.
+
 #### [stow](https://www.gnu.org/software/stow/manual/)
-macOS with homebrew
 ```bash
 brew install stow
 ```
-ubuntu
-```bash
-sudo apt-get install stow
-```
-make sure there are no dotfiles in your home folder. stow won't overwrite
+
+> *Make sure there are no dotfiles in your home folder. Stow won't overwrite!*
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
-- Follow the tutorial on the link above if you havent't already
+> Follow the tutorial on the link above if you haven't already.\
+Automatic installation script also in .vimrc
 
-> automatic installation script also in .vimrc
+#### [core utils](https://www.gnu.org/software/coreutils/)
+```bash
+brew install coreutils
+```
+
+#### [Oh my zsh](https://ohmyz.sh/)
+> Follow the tutorial on the link above if you haven't already.\
 
 ### How to make this work?
 
@@ -58,7 +69,7 @@ git clone https://github.com/lucaskobashi/.dotfiles.git
 ```bash
 bash ~/.dotfiles/dotfiles.sh
 ```
-- The script will create the symlink using stow and remove any _.DS_Store_ files that may have slipped in
+>The script will create the symlink using stow and remove any _.DS_Store_ files that may have slipped in
 
 ### Stow files
 ```bash
@@ -69,10 +80,12 @@ stow -vt ~
 ### Acknowledgements
 
 - My T.A. **Evan Semenoff** for getting me started with all of this
+- My friend **[Braden Dubois](bradendubois.dev)** for all the help and inspiration
 - [itchyny/lightline](https://github.com/itchyny/lightline.vim)
 - [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 - [joshdick/onedark](https://github.com/joshdick/onedark.vim)
 - All the youtube videos with a title that contains the words:
     * bashrc
+    * zshrc
     * vimrc
     * terminal customization
