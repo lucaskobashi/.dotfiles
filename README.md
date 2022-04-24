@@ -23,7 +23,7 @@ The bulk of the files are made to be compatible with macOS.
 Follow the tutorial on the link above if you haven't already.
 
 #### [stow](https://www.gnu.org/software/stow/manual/)
-```bash
+```zsh
 brew install stow
 ```
 
@@ -34,7 +34,7 @@ brew install stow
 Automatic installation script also in .vimrc
 
 #### [core utils](https://www.gnu.org/software/coreutils/)
-```bash
+```zsh
 brew install coreutils
 ```
 
@@ -45,7 +45,7 @@ brew install coreutils
 
 1. Clone the files to your computer
 
-```bash
+```zsh
 git clone https://github.com/lucaskobashi/.dotfiles.git
 ```
 
@@ -66,13 +66,13 @@ git clone https://github.com/lucaskobashi/.dotfiles.git
 
 > ps: i am not responsible for anything you do on your side. make sure you understand what is going on before even trying.
 
-```bash
-bash ~/.dotfiles/dotfiles.sh
+```zsh
+zsh ~/.dotfiles/dotfiles.sh
 ```
 >The script will create the symlink using stow and remove any _.DS_Store_ files that may have slipped in
 
 ### Stow files
-```bash
+```zsh
 cd ~/.dotfiles
 stow -vt ~
 ```

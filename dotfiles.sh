@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # checks if directory was cloned successfully
 if [ ! -d ~/.dotfiles/ ]
@@ -21,7 +21,8 @@ read CHOICE
 if [ $CHOICE = "y" -o $CHOICE = "yes" ]
 then
     echo "creating symlink."
-    stow -vRt ~ aliases bash git R tmux vim zsh
+    stow -vRt ~ aliases bash git R tmux vim zsh zsh-theme
+    stow -vRt ~/.oh-my-zsh/themes zsh-theme
     echo "symlink created"
 else
     echo "symlink not created."
