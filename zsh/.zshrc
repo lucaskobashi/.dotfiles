@@ -25,3 +25,4 @@ setopt autocd
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+source ~/.macaliases

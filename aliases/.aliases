@@ -15,8 +15,3 @@ alias zrc="vim ~/.zshrc;source ~/.zshrc"
 
 # remove .DS_Store files
 alias cleanupds="sudo find . -type f -name '*.DS_Store' -ls -delete"
-
-# system
-# alias only works for mac with gnu tools installed
-alias ls="gls -aFh --color=always --group-directories-first"
-alias ..="cd .."

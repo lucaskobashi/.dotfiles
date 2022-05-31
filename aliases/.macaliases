@@ -1,0 +1,6 @@
+# only works with GNU installed
+
+PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
+alias ls="gls -aFh --color=always --group-directories-first"
+alias ..="cd .."
+alias sed="gsed"
