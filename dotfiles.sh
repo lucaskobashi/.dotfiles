@@ -38,7 +38,7 @@ do
         # checking if it's set to source aliases
         while [ "$TAIL_ZSHRC" = "$SOURCE" ]
         do
-            sed -i '' '$d' ./zsh/.zshrc
+            sed -i '$d' ./zsh/.zshrc
             TAIL_ZSHRC=$(tail -1 ./zsh/.zshrc)
             echo $TAIL_ZSHRC
         done
